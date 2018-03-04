@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="J.R Ibanez Romany">
+  <meta name="description" content="">
+  <title>
+    TravelAgency
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/materialize.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a class="brand-logo" href="#home"> TravelAgency<i class="fa fa-exclamation"></i> </a>
+          <a class="button-collapse" href="#" data-activates="mobile-nav"> <i class="material-icons"> menu </i> </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+            <li>
+              <a href="#search"> Search </a>
+            </li>
+            <li>
+              <a href="#popular"> Popular Places </a>
+            </li>
+            <li>
+              <a href="#galeery"> Gallery </a>
+            </li>
+            <li>
+              <a href="#contact"> Contact </a>
+            </li>
+          </ul>
+        </div> <!-- nav wrapper -->
+      </div> <!-- container -->
+    </nav>
+  </div> <!-- navbar-fixed -->
+  
+  <!-- this ul is the side-nav for mobile devices -->
+  <ul class="side-nav" id="mobile-nav">
+    <li>
+      <a href="#home"> Home </a>
+    </li>
+    <li>
+      <a href="#search"> Search </a>
+    </li>
+    <li>
+      <a href="#gallery"> Gallery </a>
+    </li>
+    <li>
+      <a href="#popular"> Popular Places </a>
+    </li>
+    <li>
+      <a href="#contact"> Contact </a>
+    </li>
+  </ul>
+
+  <!-- carousel -->
+  <header class="slider">
+    <ul class="slides">
+      <li>
+        <img alt="resort image 1" src="./img/resort1.jpg">
+        <div class="caption center-align">
+          <h2> TAKE YOUR DREAM VACATION<i class="fa fa-exclamation"></i> </h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, impedit ipsum? Accusamus pariatur minus impedit.
+          </h5>
+          <a role="button" class="btn btn-large" href="#"> Learn more... </a>
+        </div> <!-- caption -->
+      </li>
+      <li>
+        <img alt="resort image 2" src="./img/resort2.jpg">
+        <div class="caption left-align">
+          <h2> WE WORK WITH ALL BUDGETS<i class="fa fa-exclamation"></i> </h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur molestiae aspernatur perspiciatis accusamus delectus adipisci.
+          </h5>
+          <a href="#" role="button" class="btn btn-large"> Learn more... </a>
+        </div> <!-- caption -->
+      </li>
+      <li>
+        <img alt="resort image 3" src="./img/resort3.jpg">
+        <div class="caption right-align">
+          <h2> GETAWAYS FOR YOU OR A GROUP<i class="fa fa-exclamation"></i> </h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptates laboriosam ullam. Error, fugit velit.
+          </h5>
+          <a href="#" class="btn btn-large" role="button"> Learn more... </a>
+        </div> <!-- caption -->
+      </li>
+    </ul> <!-- slides -->
+  </header> <!-- slider -->
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      //init side-nav for small screens
+      $(".button-collapse").sideNav();
+      //init carousel
+      $(".slider").slider({
+        indicators: false,
+        hide: 500,
+        transition: 500,
+        interval: 7000
+      });
+
+    });
+  </script>
+</body>
+</html>
