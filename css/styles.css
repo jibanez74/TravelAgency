@@ -1,0 +1,19 @@
+body, html {height: 100%;}
+
+.slider .btn {
+  margin-top: 20px;
+}
+
+#search input {
+  padding: 5px !important;
+  font-size: 18px;
+  width: 90%;
+  border: #F4F4F4 3px solid !important;
+}
+
+.autocomplete-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  ;
+}

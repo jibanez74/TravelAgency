@@ -99,6 +99,64 @@
     </ul> <!-- slides -->
   </header> <!-- slider -->
 
+  <!-- seaction for search -->
+  <section class="teal darken-1 section" id="search white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3> Search our destinations <i class="fa fa-search"></i> </h3>
+          <div class="input-field">
+            <input type="text" class="white grey-text autocomplete" placeholder="Aruba, Cancun, etc">
+          </div> <!-- input field -->
+        </div> <!-- col 12 -->
+      </div> <!-- row -->
+    </div> <!-- container --> 
+  </section> <!-- search -->
+
+  <!-- icons section -->
+  <section class="section grey lighten-4 center" id="icons-section">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text"> room </i>
+            <h4> Pick whre to go </h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error a veniam, nostrum quam dicta nulla vel?
+            </p>
+          </div> <!-- card panel -->
+        </div> <!-- col s12 m4 -->
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text"> store </i>
+            <h4> Travel Shop </h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptatibus deserunt placeat. Incidunt iure dicta voluptatibus quidem debitis!
+            </p>
+          </div> <!-- card panel -->
+        </div> <!-- col s12 m4 -->
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text"> airplanemode_active </i>
+            <h4> Fly for cheap </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae qui architecto similique enim.
+            </p>
+          </div> <!-- card panel -->
+        </div> <!-- col s12 m4 -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section> <!-- icons -->
+
+  <!-- popular section -->
+  <section class="section" id="popular">
+    <div class="container">
+      <div class="row">
+        
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section> <!-- popular section -->
+
   <script src="./js/jquery.min.js"></script>
   <script src="./js/materialize.min.js"></script>
   <script>
@@ -112,6 +170,30 @@
         transition: 500,
         interval: 7000
       });
+      //init autocomplete search section input
+      $(".autocomplete").autocomplete({
+        //object must be named data
+        data: {
+          "Aruba": null,
+          "Cancun/Mexico": null,
+          "Culebra/Puerto Rico": null,
+          "Hawaii": null,
+          "Miami/Florida": null,
+          "California": null,
+          "Paris/France": null,
+          "Madrid/Spain": null,
+          "Barcelona/Spain": null,
+          "Jamaica": null,
+          "The Bahamas": null,
+          "Buenos Aires/Argentina": null,
+          "Malaga/Spain": null,
+          "London/England": null,
+          "Rome/Italy": null,
+          "San Juan/Puerto Rico": null,
+          "New York": null
+        }
+      });
+
 
     });
   </script>
